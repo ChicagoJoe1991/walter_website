@@ -1,11 +1,11 @@
 .container {
     display: grid;
-    grid-template-columns:  7.5% 70/3 7.5% 70/3 7.5% 70/3 7.5%;
+    grid-template-columns:  7.5% 1fr 7.5% 1fr 7.5% 1fr 7.5%;
     grid-template-rows: 100px 600px 25% 10% 10% auto;
   }
-.item{
+.item-a{
     grid-column-start: 2;
-    grid-column-end: four;
+    grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
     background: blue;
