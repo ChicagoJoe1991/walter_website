@@ -1,33 +1,56 @@
-.container {
-    display: grid;
-    grid-template-columns:  7.5% 1fr 7.5% 1fr 7.5% 1fr 7.5%;
-    grid-template-rows: 100px 600px 25% 10% 10% auto;
-  }
-.item-a{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background: blue;
+html {
+    font-size: 16px;
+
 }
-.item-b{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background: green;
+h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-bottom: 0px;
+    line-height: 0;
+
 }
-.item-c{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background: green;
+h2 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
-.item-d{
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background: green;
+h3 {
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    font-weight: 100;
+    text-align: center;
+}
+.center {
+    text-align: center;
+    margin: auto;
+    border: 5px solid blue;
+
+}
+#fullName {
+    width: fit-content;
+    margin: auto;
+    border: 5px solid blue;
+    height: fit-content;
+    margin-top: 12%;
+
+
+}
+#projButton {
+    border: 1px solid blue;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    width: 5%;
+}
+header {
+    border: 5px solid green;
+    width: 100%;
+    min-height: 600px ;
+}
+
+#banner {
+padding-top: 0%;
 }
