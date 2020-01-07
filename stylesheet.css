@@ -2,11 +2,13 @@ html {
     font-size: 16px;
 
 }
+body {
+    width: 100%;
+}
 h1 {
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    padding-bottom: 0px;
     line-height: 0;
 
 }
@@ -27,6 +29,7 @@ h3 {
     margin: auto;
     border: 5px solid blue;
 
+
 }
 #fullName {
     width: fit-content;
@@ -46,11 +49,13 @@ h3 {
     width: 5%;
 }
 header {
-    border: 5px solid green;
+    border: 0px solid green;
     width: 100%;
     min-height: 600px ;
+    background-image: url(./headrbg.jpg);
 }
 
 #banner {
 padding-top: 0%;
+width: 100%;
 }
