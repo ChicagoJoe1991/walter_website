@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 html {
     font-size: 16px;
 
@@ -20,7 +24,8 @@ h2 {
 h3 {
     font-size: 1.25em;
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
+    margin: 0;
+   
     font-weight: 100;
     text-align: center;
 }
@@ -32,12 +37,12 @@ h3 {
 
 }
 #fullName {
-    width: fit-content;
+    width: 100%;
     margin: auto;
     border: 5px solid blue;
     height: fit-content;
-    margin-top: 12%;
-
+    position: absolute;
+    top: 200px;
 
 }
 #projButton {
@@ -47,12 +52,20 @@ h3 {
     border-radius: 5px;
     padding: 5px;
     width: 5%;
+    background-image: linear-gradient(to top left,#329e7e,#2d8b70);
 }
 header {
-    border: 0px solid green;
+    
     width: 100%;
     min-height: 600px ;
-    background-image: url(./headrbg.jpg);
+    max-height: 800px;
+    position: absolute;
+    margin: none;
+}
+header .img {
+    z-index: 5;
+    height: 600px;
+    overflow: hidden;
 }
 
 #banner {
