@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     font-size: 24px;
@@ -12,30 +13,25 @@ body {
 
 /* navigation bar for desktop */
 header {
-    position: absolute;
-    top:0;
-    left: 0;
-    background: black;
-    box-sizing: border-box;
-    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
 }
-header .logo {
+.logo {
     color: white;
     height: 50px;
     line-height: 50px;
     font-size: 1rem;
-    float: left;
     font-weight: bold;
-    letter-spacing: 5px;
-    
-}
-header nav {
-    float: right;
+    letter-spacing: 5px;  
 }
 header nav ul {
-    margin: 0;
-    padding: 0;
     display: flex;
+    justify-content: space-around;
+    width: 30%;
+    
 }
 header nav ul li {
     list-style: none;
@@ -52,20 +48,23 @@ header nav ul li a:hover,
 header nav ul li a.active{
     color: white;
     background: #00FF00;
-}    
-.menu-toggle {
-    color: white;
-    float: right;
-    line-height: 50px;
-    font-size: 1rem;
+} 
+.burger {
+    padding: 5px;
+}   
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
     cursor: pointer;
-    display: none;
+    
 }
 
 /*navigation for tablet and mobile  */
 
 
-@media (max-width: 991px){
+@media (max-width: 768px){
     body{
         overflow-x: hidden;
     }
@@ -75,33 +74,35 @@ header nav ul li a.active{
     .menu-toggle {
         display: block;
     }
-    header nav {
-        /* display: none; */
-        
-        right: -100%;
-        top: 50px;
-        width: 75%;
-        position: absolute;
-        transition: 0.5s;
+    .nav-bar {
+      
     }
-    header nav ul {
+    .nav-ul {
+        position: absolute;    
+        right: 0px;
+        height: calc(100vh - 50px);        
+        top: 50px;   
+        background-color: black;
         display: flex;
         flex-direction: column;
-        background: black;
-        height: calc(100vh - 50px);
+        align-items: center;
+        width: 50%;
+
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
     }
     header nav ul li a {
         border-bottom: 1px solid darkgray ;
     }
-    header nav.active {
-        right: 0;
+    .nav-active {
+        transform: translateX(0%);
     }
 }
 
+/* intro section below */
 
 
-
-.topIntroContainer {
+/* .topIntroContainer {
     display: flex;
     flex-basis: auto;
     flex-grow: 4;
@@ -153,7 +154,7 @@ header nav ul li a.active{
     height: 600px;
     overflow: hidden;
 } */
-h1 {
+/* h1 {
     font-size: 3rem;
     font-weight: 400;
     color: white;
@@ -178,4 +179,4 @@ align-items: center;
 text-align: center;
 height: 46rem;
 background-size: cover;
-}
+} */ 
