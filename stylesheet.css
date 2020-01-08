@@ -7,18 +7,16 @@ html {
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
 }
-body {
-    width: 100%;
-}
 
 /* navigation bar for desktop */
-header {
-    display: inline-flex;
+.nav-bar {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
     background-color: black;
 }
+
 .logo {
     color: white;
     height: 50px;
@@ -29,6 +27,7 @@ header {
 }
 header nav ul {
     display: flex;
+    background-color: blue;
     justify-content: space-around;
     width: 30%;
     
@@ -51,13 +50,14 @@ header nav ul li a.active{
 } 
 .burger {
     padding: 5px;
+    cursor: pointer;
+
 }   
 .burger div{
     width: 25px;
     height: 5px;
     background-color: white;
     margin: 5px;
-    cursor: pointer;
     
 }
 
