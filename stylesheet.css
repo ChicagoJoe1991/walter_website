@@ -31,6 +31,7 @@ header {
     background-color: black;
     padding-left: 75px;
     overflow: auto;
+    z-index: 2;
 }
 
 .logo {
@@ -81,7 +82,14 @@ nav ul li a.active{
 
 
 
+
+
+
 /* project list styling */
+.proj-banner {
+    text-align: center;
+    width: 100%;
+}
 .project-container {
     widows: 100%;
 }
@@ -103,13 +111,13 @@ nav ul li a.active{
     height: 300px;
     border-radius: 10px;
     margin: 1em 0;
+    z-index: 1;
+    position: relative;
 
 
 
 }
-.proj-list li a {
-    text-align: center;
-}
+
 
 
 

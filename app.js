@@ -47,3 +47,27 @@ function stickyNav(){
 
 
 //project notecard animations
+
+$(document).ready(function() {
+    $('.proj-list a li').hover(function() {
+        $(this).animate({
+            left: 20,
+            bottom: 20,
+            height: '310px',
+            width: '510px',
+            opacity: '0.95', 
+        });
+    },
+    function() {
+        $(this).animate({
+            left: 0,
+            bottom: 0,
+            height: '300px',
+            width: '500px',
+            opacity: '1' 
+        });
+    });
+});
+
+
+
