@@ -47,19 +47,6 @@ header nav ul li a.active{
     color: white;
     background: #00FF00;
 } 
-.burger {
-    padding: 5px;
-    cursor: pointer;
-    display: none;
-
-}   
-.burger div{
-    width: 25px;
-    height: 2px;
-    background-color: white;
-    margin: 5px;
-    
-}
 
 /*navigation for tablet and mobile  */
 
@@ -94,6 +81,35 @@ header nav ul li a.active{
     }
     .nav-active {
         transform: translateX(0%);
+    }
+    .burger {
+        padding: 5px;
+        cursor: pointer;
+    }   
+    .burger div{
+        width: 25px;
+        height: 2px;
+        background-color: white;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    .bun .line1{
+        transform: rotate(-45deg) translate(-5px,5px);
+    }
+    .bun .line2{
+        opacity: 0;
+    }
+    .bun .line3{
+        transform: rotate(45deg) translate(-5px,-5px);
     }
 }
 
