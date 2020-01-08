@@ -113,7 +113,8 @@ nav ul li a.active{
     margin: 1em 0;
     z-index: 1;
     position: relative;
-
+    justify-content: center;
+    align-items: center;
 
 
 }
