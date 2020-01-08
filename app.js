@@ -45,4 +45,5 @@ function stickyNav(){
     }
  }
 
-// // call functions
+
+//project notecard animations
