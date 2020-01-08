@@ -27,7 +27,6 @@ html {
 }
 header nav ul {
     display: flex;
-    background-color: blue;
     justify-content: space-around;
     width: 30%;
     
@@ -51,11 +50,12 @@ header nav ul li a.active{
 .burger {
     padding: 5px;
     cursor: pointer;
+    display: none;
 
 }   
 .burger div{
     width: 25px;
-    height: 5px;
+    height: 2px;
     background-color: white;
     margin: 5px;
     
@@ -68,9 +68,7 @@ header nav ul li a.active{
     body{
         overflow-x: hidden;
     }
-    header {
-        padding: 0 20px;
-    }
+   
     .menu-toggle {
         display: block;
     }
