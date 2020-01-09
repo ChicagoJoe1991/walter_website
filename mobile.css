@@ -1,0 +1,87 @@
+@media screen and (max-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
+   
+    .menu-toggle {
+        display: block;
+    }
+    .nav-list {
+        position: fixed;    
+        right: 0px;
+        height: calc(100vh - 50px);        
+        top: 50px;   
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    nav ul li a {
+        border-bottom: 1px solid darkgray ;
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+    .burger {
+        padding: 5px;
+        cursor: pointer;
+        padding-right: 20px;
+    }   
+    .burger div{
+        width: 25px;
+        height: 2px;
+        background-color: white;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+    @keyframes navLinkFade {
+        /* menu fading in from the right */
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    /* desired bun animation result */
+    .bun .line1{
+        transform: rotate(-45deg) translate(-5px,5px);
+    }
+    .bun .line2{
+        opacity: 0;
+    }
+    .bun .line3{
+        transform: rotate(45deg) translate(-5px,-5px);
+    }
+    /* sticky nav bar */
+    .snavbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .snavbar + .content {
+        padding-top: 60px;
+    }
+    
+    /* header for tablet and mobile */
+
+    .center {
+        display: flex;
+        width: fit-content;
+        margin: auto;
+    }
+    #fullName {
+        margin-top: 5rem;
+    }    
+    #job {
+        margin-top: -5rem;
+    }
+    
+
+}
