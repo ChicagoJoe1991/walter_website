@@ -1,4 +1,9 @@
 @media screen and (max-width: 1024px){
+    html {
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
     body{
         overflow-x: hidden;
     }
@@ -80,8 +85,20 @@
         margin-top: 5rem;
     }    
     #job {
-        margin-top: -5rem;
+        margin-top: -.25rem;
     }
-    
+    h1 {
+        font-weight: 100;
+        font-size: 2em;
+        margin: auto;
+    }
+    h3 {
+        font-weight: 100;
+        margin: auto;
+    }
+    h4 {
+        font-weight: 100;
+        margin: auto;
+    }
 
 }
