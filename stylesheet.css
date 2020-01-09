@@ -17,12 +17,19 @@ html {
 */
 
 header {
-    background-image: linear-gradient(to right, #1e3d36,  #335128);
+    background: linear-gradient(to right, #1e3d36,  #335128);
     color: white;
     height: 80vh;
+    width: 100%;
+    z-index: -1;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 /* navigation bar for desktop */
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -52,7 +59,7 @@ header {
 }
 nav ul li {
     list-style: none;
-    display: block;
+    display: flex;
 }
 nav ul li a {
     height: 50px;
@@ -76,60 +83,12 @@ nav ul li a.active{
     width: 100%;
   }
 
-  .snavbar + .content {
-    padding-top: 60px;
-  }
-
-
-
-
-
-
-/* project list styling */
-.proj-banner {
-    text-align: center;
-    width: 100%;
-}
-.project-container {
-    widows: 100%;
-}
-
-.proj-list {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-.proj-list li {
-    display: flex;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    width: 500px;
-    height: 300px;
-    border-radius: 10px;
-    margin: 1em 0;
-    z-index: 1;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-
-
+.snavbar + .content {
+padding-top: 60px;
 }
 
 
-
-
-
-
-
-
-
-
-
-/*navigation for tablet and mobile  */
+/*tablet and mobile  */
 
 
 @media (max-width: 1024px){
@@ -197,12 +156,95 @@ nav ul li a.active{
         position: fixed;
         top: 0;
         width: 100%;
-      }
+    }
 
-      .snavbar + .content {
+    .snavbar + .content {
         padding-top: 60px;
-      }
+    }
+    
+/* header for tablet and mobile */
+
+    #fullName {
+        border: 2px solid blue;
+        margin-top: 5rem;
+        margin: auto;
+    }    
+    #job {
+        border: 2px solid blue;
+        margin-top: 1rem;
+        margin: auto;
+    }
+    #projButton {
+        border: 2px solid blue;
+        margin: auto;
+    }
+
 }
+
+
+/* header for desktop */
+
+#fullName {
+    border: 2px solid blue;
+    margin-top: 5rem;
+    margin-left: 7rem;
+    width: fit-content;
+}    
+#job {
+    border: 2px solid blue;
+    margin-top: 1rem;
+    margin-left: 7rem;
+    width: fit-content;
+}
+#projButton {
+    border: 2px solid blue;
+    margin: auto;
+}
+
+h3 {
+    font-weight: 100;
+}
+h4 {
+    font-weight: 100;
+}
+
+
+
+
+
+
+/* project list styling */
+.proj-banner {
+    text-align: center;
+    width: 100%;
+}
+.project-container {
+    widows: 100%;
+}
+.proj-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.proj-list li {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 1em 0;
+    z-index: 1;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 /* intro section below */
 
