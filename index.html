@@ -7,7 +7,7 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     </head>
     <body>
         
@@ -28,9 +28,11 @@
                 </div>
             </nav>
             <header>
+                <canvas id="canvas1">
                     <div id="fullName" class="center"><h1>Walter Eschenbach</h1></div>
                     <div id="job" class="center"><h3>Front End Engineer</h3></div>
                     <div id="projButton" class="center"><h4>Resume</h4></div>
+                </canvas>
             </header>
         
 <!-- portfolio flex of all projects -->
@@ -38,7 +40,7 @@
         
             <div class="proj-banner"><h2>Portfolio</h2></div>
             <div class="project-container">
-                <ul class="proj-list">
+                <ul class="proj-list" id="proj-ul">
                     <a href="#"><li id="proj1"><img src=".//svgfiles/globe.svg"/></li></a>
                     <a href="#"><li id="proj1"><img src=".//svgfiles/globe.svg"/></li></a>
                     <a href="#"><li id="proj1"><img src=".//svgfiles/globe.svg"/></li></a>
@@ -67,6 +69,7 @@
             <div>
 
         <script src="app.js"></script>
+        <script src="canvas.js"></script>
         <script src="https://kit.fontawesome.com/72ca573ca5.js" crossorigin="anonymous"></script>
 
     </body>

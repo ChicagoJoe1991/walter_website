@@ -14,8 +14,8 @@
     .nav-list {
         position: fixed;    
         right: 0px;
-        height: calc(100vh - 50px);        
-        top: 50px;   
+        height: 100vh;        
+        top: 0px;   
         background-color: black;
         display: flex;
         flex-direction: column;

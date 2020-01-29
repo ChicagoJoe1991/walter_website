@@ -54,7 +54,7 @@ $(document).ready(function() {
             left: 20,
             bottom: 20,
             height: '310px',
-            width: '510px',
+            width: '520px',
             opacity: '0.95', 
         });
     },
@@ -69,5 +69,10 @@ $(document).ready(function() {
     });
 });
 
-
-
+// scroll changing opacity 
+const navOpacity = () => {
+    let nav = document.getElementById('proj-ul');
+    console.log(nav);
+    nav.style.opacity = 1;
+}
+navOpacity();
