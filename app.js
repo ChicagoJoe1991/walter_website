@@ -25,22 +25,22 @@ navSlide();
 
 // // //when the user scrolls the page, execute stickyNav() function
 
-window.onscroll = function() {
-  stickyNav();
-};
-// // //get the nav bar
-let navbar = document.getElementById("nav-bar");
-// // //get the offset position of the navbar
-let snavbar = navbar.offsetTop;
-console.log(snavbar);
-// // //add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function stickyNav() {
-  if (window.pageYOffset >= snavbar) {
-    navbar.classList.add("snavbar");
-  } else {
-    navbar.classList.remove("snavbar");
-  }
-}
+// window.onscroll = function() {
+//   stickyNav();
+// };
+// // // //get the nav bar
+// let navbar = document.getElementById("nav-bar");
+// // // //get the offset position of the navbar
+// let snavbar = navbar.offsetTop;
+// console.log(snavbar);
+// // // //add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// function stickyNav() {
+//   if (window.pageYOffset >= snavbar) {
+//     navbar.classList.add("snavbar");
+//   } else {
+//     navbar.classList.remove("snavbar");
+//   }
+// }
 
 //project notecard animations
 
