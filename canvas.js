@@ -4,7 +4,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const ctx = canvas.getContext("2d");
-
+ctx.fillText("hello world", 50, 50);
 let particlesArray;
 
 // create particle
@@ -17,6 +17,9 @@ class Particle {
     this.size = size;
     this.color = color;
   }
+
+  // Add text
+
   //method to draw individual particle
   draw() {
     ctx.beginPath();

@@ -15,27 +15,68 @@ html {
 335128 - green
 */
 
+/* header */
+
 header {
   background: linear-gradient(to right, #1e3d36, #335128);
-  color: white;
   height: 80vh;
   width: 100%;
   z-index: -1;
   margin: auto;
   position: relative;
   display: flex;
+}
+header div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  pointer-events: none;
+  border: 2px solid red;
+  width: 50%;
+  display: flex;
   flex-direction: column;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 #canvas1 {
   height: 100%;
   width: 100%;
-  z-index: 3;
 }
 
+#fullName {
+  width: 100%;
+  margin-top: 4rem;
+  text-align: center;
+  border: 1px solid blue;
+  height: fit-content;
+}
+#job {
+  width: 100%;
+  margin-top: 8rem;
+  text-align: center;
+  border: 1px solid blue;
+  height: fit-content;
+}
+#projButton {
+  width: 100%;
+  margin-top: 9rem;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 2em;
+  margin: auto;
+}
+h3 {
+  font-weight: 100;
+  margin: auto;
+}
+h4 {
+  font-weight: 100;
+  margin: auto;
+}
 /* navigation bar for desktop */
 
 .nav-bar {
@@ -88,42 +129,6 @@ nav ul li a.active {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-.snavbar + .content {
-  padding-top: 60px;
-}
-
-/* header */
-
-.center {
-  display: flex;
-  width: 50%;
-}
-
-#fullName {
-  margin-top: 8rem;
-  z-index: 4;
-}
-#job {
-  margin-top: 1rem;
-}
-#projButton {
-  margin-top: 9rem;
-}
-
-h1 {
-  font-weight: 100;
-  font-size: 2em;
-  margin: auto;
-}
-h3 {
-  font-weight: 100;
-  margin: auto;
-}
-h4 {
-  font-weight: 100;
-  margin: auto;
 }
 
 /* project list styling */
