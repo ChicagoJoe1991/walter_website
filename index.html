@@ -1,59 +1,82 @@
 <!DOCTYPE HTML>
 <html lang="eng"></html>
-<link href="Stylesheet.css" rel="stylesheet" type='text/css'>
+<link href="stylesheet.css" rel="stylesheet" type='text/css'>
+<link href="mobile.css" rel="stylesheet" type='text/css'>
 
 <html>
     <head>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     </head>
     <body>
-        <header>
-            <div class="logo">LOGO</div>
-            <nav>
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
+        
+            <nav class="nav-bar" id="nav-bar">
+                <div class="logo">LOGO</div>
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Toolkit</a></li>
+                    <li><a href="#">Resume</a></li>
                     <li><a href="#">Contact</a></li>
                   
                 </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </nav>
-            <div class="menu-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" style=" fill: #ffffff;;">
-                    <path d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z"></path>
-                </svg>
-            </div>
-        </header>
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('.menu-toggle').click(function(){
-                    $('nav').toggleClass('active')
-                })
-            })
-        </script>
-            <!-- <img src="headrbg2.jpg" alt=""> -->
-            <div class="topIntroContainer">
-                <div class="leftIntroContainer">
+            <header>
+                <canvas id="canvas1">
                     <div id="fullName" class="center"><h1>Walter Eschenbach</h1></div>
-                    <div id="job" class="center"><h2>Front End Engineer</h2></div>
-                    <div id="projButton" class="center"><h3>Projects</h3></div>
-                </div>
-                <div class="rightIntroContainer">
-
-                </div>
-            </div>   
-            <div class="bottomIntroContainer">
-            </div>   
+                    <div id="job" class="center"><h3>Front End Engineer</h3></div>
+                    <div id="projButton" class="center"><h4>Resume</h4></div>
+                </canvas>
+            </header>
         
-        <div id="banner" class="center"><h2>Project Portfolio</h2></div>
-      
+<!-- portfolio flex of all projects -->
+        
+        
+            <div class="proj-banner"><h2>Portfolio</h2></div>
+            <div class="project-container">
+                <ul class="proj-list" id="proj-ul">
+                    <a href="#"><li id="proj1"><img src=".//svgfiles/globe.svg"/></li></a>
+                    <a href="#"><li id="proj1"><img src=".//svgfiles/globe.svg"/></li></a>
+                    <a href="#"><li id="proj1"><img src=".//svgfiles/globe.svg"/></li></a>
+                    <a href="#"><li id="proj1"><img src=".//svgfiles/globe.svg"/></li></a>
+                    <a href="#"><li id="proj1"><img src=".//svgfiles/globe.svg"/></li></a>
+                    <a href="#"><li id="proj1"><img src=".//svgfiles/globe.svg"/></li></a>
+                    <a href="#"><li id="proj1"><img src=".//svgfiles/globe.svg"/></li></a>
+
+                </ul>
+            <div class="level3">
+                <div class="resume">
+                </div>
+                <div class="toolkit">
+                    <ul>
+                        <li id="toolkit-title"><h2>Toolkit</h2></li>
+                        <li><img id="" src=".//svgfiles/html5.svg"></img></li> 
+                        <li><img id="" src=".//svgfiles/css3.svg"></img></li>
+                        <li><img id="" src=".//svgfiles/javascript-vertical.svg"></img></li>
+                        <li><img id="" src=".//svgfiles/jquery-vertical.svg"></img></li>
+                        <li><img id="" src=".//svgfiles/react-icon.svg"></img></li>
+                        <li><img id="" src=".//svgfiles/git.svg"></img></li>
+                        <li><img id="" src=".//svgfiles/github-tile.svg"></img></li>
+                    </ul>
+                </div>
+                
+            <div>
+
+        <script src="app.js"></script>
+        <script src="canvas.js"></script>
+        <script src="https://kit.fontawesome.com/72ca573ca5.js" crossorigin="anonymous"></script>
+
     </body>
     <footer>
 
     </footer>
+    
 </html>
 
 
