@@ -62,7 +62,7 @@ header div {
   width: 100%;
   margin-top: 9rem;
   text-align: center;
-  border: 1px solid blue;
+  border: 1px solid yellow;
 }
 
 h1 {
@@ -121,15 +121,8 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a.active {
   color: white;
-  background: #5f412e;
   display: block;
-}
-
-/* sticky nav bar */
-.snavbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
+  font-style: italic;
 }
 
 /* project list styling */
